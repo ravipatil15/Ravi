@@ -16,7 +16,7 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class LoginTest {
+public class AddNewPost {
 
 
 	private WebDriver driver; 
@@ -62,23 +62,24 @@ public class LoginTest {
 	}
 	
 	@Test
-	public void loginPassTest() throws InterruptedException {
+	public void NewPost() throws InterruptedException {
 			loginPOM.sendUserName("admin");
 			loginPOM.sendPassword("admin@123");
 			loginPOM.clickLoginBtn(); 
 			screenShot.captureScreenShot("First");
 			loginPOM.clickPostslink();
 			screenShot.captureScreenShot("PostsLink");
-			loginPOM.clickAllPosts();
-			screenShot.captureScreenShot("AllPostsLink");
-			loginPOM.hoverOnPosts();
-			screenShot.captureScreenShot("HoverOnPost");
-			loginPOM.ClickOnTrash();
-			screenShot.captureScreenShot("ClickOnTrash");
+			loginPOM.addNewPosts();
+			screenShot.captureScreenShot("AddNewPosts");
+			loginPOM.sendaddTitle("New Launches 123");
+			screenShot.captureScreenShot("AddTitle");
+			loginPOM.sendaddContent("New Launch in Home - 123");
+			screenShot.captureScreenShot("AddContent");
+			loginPOM.clickPublish();
+			Thread.sleep(3000);
+			screenShot.captureScreenShot("Publish");
 			
 			
 	}
-	
-	
 	
 }
