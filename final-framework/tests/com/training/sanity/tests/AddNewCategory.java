@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -62,16 +63,17 @@ public class AddNewCategory {
 			loginPOM.categoryTitle();
 			loginPOM.addCategoryTitle();
 			screenShot.captureScreenShot("CategoryTitle");
-			loginPOM.CategoryName("New Launches - 204");
-			loginPOM.SlugName("launch 204");
+			loginPOM.CategoryName("New Launches - 206");
+			loginPOM.SlugName("launch 205");
 			loginPOM.DescriptionName("New Launches of Villas, apartments, flats");
 			screenShot.captureScreenShot("AddCatogory");
 			loginPOM.SubmitButton();
 			screenShot.captureScreenShot("AddCatogorybutton");
-			Thread.sleep(10000);
-			loginPOM.sendSearchCat("New Launches -204");
+			loginPOM.sendSearchCat("New Launches - 206");
+			driver.navigate().refresh();
+			loginPOM.sendSearchCat("New Launches - 206");
 			loginPOM.clickSeach();
-			Thread.sleep(3000);
+			
 			screenShot.captureScreenShot("CategoryLabel");
 	}
 
