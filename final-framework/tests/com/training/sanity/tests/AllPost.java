@@ -11,17 +11,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
+import com.training.pom.AllPostPOM;
 import com.training.pom.LoginPOM;
-
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class AddNewPost {
-
-
+public class AllPost {
 	private WebDriver driver; 
 	private String baseUrl; 
 	private LoginPOM loginPOM; 
+	private AllPostPOM postPOM;
 	
 		private static Properties properties; 
 	private ScreenShot screenShot; 
@@ -46,7 +45,7 @@ public class AddNewPost {
 	public void beforeMethod() {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
-		
+		postPOM = new AllPostPOM(driver);		
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		driver.get(baseUrl);
@@ -62,24 +61,24 @@ public class AddNewPost {
 	}
 	
 	@Test
-	public void NewPost() throws InterruptedException {
+	public void loginPassTest() throws InterruptedException {
 			loginPOM.sendUserName("admin");
 			loginPOM.sendPassword("admin@123");
 			loginPOM.clickLoginBtn(); 
 			screenShot.captureScreenShot("First");
-			loginPOM.clickPostslink();
+			postPOM.clickPostslink();
 			screenShot.captureScreenShot("PostsLink");
-			loginPOM.addNewPosts();
-			screenShot.captureScreenShot("AddNewPosts");
-			loginPOM.sendaddTitle("New Launches 123");
-			screenShot.captureScreenShot("AddTitle");
-			loginPOM.sendaddContent("New Launch in Home - 123");
-			screenShot.captureScreenShot("AddContent");
-			loginPOM.clickPublish();
+			postPOM.clickAllPosts();
+			screenShot.captureScreenShot("AllPostsLink");
+			postPOM.hoverOnPosts();
 			Thread.sleep(3000);
-			screenShot.captureScreenShot("Publish");
-			
+			screenShot.captureScreenShot("HoverOnPost");
+			postPOM.clickOnTrash();
+			screenShot.captureScreenShot("ClickOnTrash");
+			postPOM.delMessage();
+			screenShot.captureScreenShot("Delete Message");
 			
 	}
 	
+
 }

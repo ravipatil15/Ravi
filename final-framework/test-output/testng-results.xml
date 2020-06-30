@@ -1,98 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50521" started-at="2020-06-29T23:01:26 IST" finished-at="2020-06-29T23:02:17 IST">
+  <suite name="Default suite" duration-ms="106883" started-at="2020-06-30T21:32:05 IST" finished-at="2020-06-30T21:33:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50521" started-at="2020-06-29T23:01:26 IST" finished-at="2020-06-29T23:02:17 IST">
-      <class name="com.training.sanity.tests.AddNewCategory">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AddNewCategory@50b494a6]" name="setUpBeforeClass" is-config="true" duration-ms="24" started-at="2020-06-29T23:01:26 IST" finished-at="2020-06-29T23:01:26 IST">
+    <test name="Default test" duration-ms="106883" started-at="2020-06-30T21:32:05 IST" finished-at="2020-06-30T21:33:52 IST">
+      <class name="com.training.sanity.tests.AddPost">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AddPost@50b494a6]" name="setUpBeforeClass" is-config="true" duration-ms="14" started-at="2020-06-30T21:32:05 IST" finished-at="2020-06-30T21:32:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.sanity.tests.AddNewCategory@50b494a6]" name="beforeMethod" is-config="true" duration-ms="11796" started-at="2020-06-29T23:01:26 IST" finished-at="2020-06-29T23:01:38 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.training.sanity.tests.AddPost@50b494a6]" name="beforeMethod" is-config="true" duration-ms="41327" started-at="2020-06-30T21:32:05 IST" finished-at="2020-06-30T21:32:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="addCategory()[pri:0, instance:com.training.sanity.tests.AddNewCategory@50b494a6]" name="addCategory" duration-ms="32792" started-at="2020-06-29T23:01:38 IST" finished-at="2020-06-29T23:02:11 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="submit" id="search-submit" class="button" value="Search Categories"> is not clickable at point (1180, 14). Other element would receive the click: <a class="ab-item" aria-haspopup="true" href="http://realty-real-estatem1.upskills.in/wp-admin/profile.php">...</a>
-  (Session info: chrome=83.0.4103.116)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-AK32VJV', ip: '9.79.212.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\RAVIPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 67f1daa20684e167fc8a64a6353d190a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" id="search-submit" class="button" value="Search Categories"> is not clickable at point (1180, 14). Other element would receive the click: <a class="ab-item" aria-haspopup="true" href="http://realty-real-estatem1.upskills.in/wp-admin/profile.php">...</a>
-  (Session info: chrome=83.0.4103.116)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-AK32VJV', ip: '9.79.212.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\RAVIPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 67f1daa20684e167fc8a64a6353d190a
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.training.pom.LoginPOM.clickSeach(LoginPOM.java:183)
-at com.training.sanity.tests.AddNewCategory.addCategory(AddNewCategory.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method status="PASS" signature="NewPost()[pri:0, instance:com.training.sanity.tests.AddPost@50b494a6]" name="NewPost" duration-ms="59713" started-at="2020-06-30T21:32:46 IST" finished-at="2020-06-30T21:33:46 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCategory -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AddNewCategory@50b494a6]" name="tearDown" is-config="true" duration-ms="5846" started-at="2020-06-29T23:02:11 IST" finished-at="2020-06-29T23:02:17 IST">
+        </test-method> <!-- NewPost -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AddPost@50b494a6]" name="tearDown" is-config="true" duration-ms="5771" started-at="2020-06-30T21:33:46 IST" finished-at="2020-06-30T21:33:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.AddNewCategory -->
+      </class> <!-- com.training.sanity.tests.AddPost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

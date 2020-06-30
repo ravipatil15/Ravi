@@ -22,8 +22,8 @@ public class LoginTest {
 	private WebDriver driver; 
 	private String baseUrl; 
 	private LoginPOM loginPOM; 
-	
-		private static Properties properties; 
+		
+	private static Properties properties; 
 	private ScreenShot screenShot; 
 	
 	
@@ -45,8 +45,7 @@ public class LoginTest {
 	@BeforeMethod
 	public void beforeMethod() {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
-		
+		loginPOM = new LoginPOM(driver); 	
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		driver.get(baseUrl);
@@ -66,19 +65,6 @@ public class LoginTest {
 			loginPOM.sendUserName("admin");
 			loginPOM.sendPassword("admin@123");
 			loginPOM.clickLoginBtn(); 
-			screenShot.captureScreenShot("First");
-			loginPOM.clickPostslink();
-			screenShot.captureScreenShot("PostsLink");
-			loginPOM.clickAllPosts();
-			screenShot.captureScreenShot("AllPostsLink");
-			loginPOM.hoverOnPosts();
-			screenShot.captureScreenShot("HoverOnPost");
-			loginPOM.ClickOnTrash();
-			screenShot.captureScreenShot("ClickOnTrash");
-			
-			
+			screenShot.captureScreenShot("First");		
 	}
-	
-	
-	
 }
