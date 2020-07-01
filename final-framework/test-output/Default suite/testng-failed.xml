@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.AllPost">
+      <class name="com.training.sanity.tests.CreateProperty">
         <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="CreatePropertyName"/>
           <include name="tearDown"/>
           <include name="beforeMethod"/>
-          <include name="setUpBeforeClass"/>
-          <include name="loginPassTest"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.AllPost -->
+      </class> <!-- com.training.sanity.tests.CreateProperty -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
